@@ -12,7 +12,7 @@ def main():
                 with open(path, 'rb') as f:
                     contents = f.read()
 
-                if not contents.endswith('\n'):
+                if not contents.endswith(b'\n'):
                     with open(path, 'wb') as f:
                         f.write((contents + b'\n').lstrip())
 
